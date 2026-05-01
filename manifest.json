@@ -1,0 +1,13 @@
+{
+  "manifest_version":3,
+  "name":"Youtube Auto Pause",
+  "version":"0.1",
+  "description":"Automatically pause YouTube when switching tabs.",
+   "permissions":["scripting"],
+   "content_scripts":[
+    {
+      "matches":["*://www.youtube.com/*"],
+      "js":["pause-on-tab-switch.js"]
+    }
+   ]
+}
